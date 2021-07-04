@@ -18,9 +18,12 @@ use Illuminate\Support\Facades\Route;
 // });
 
 
-Route::group(['namespace'=>'backend'], function(){
-    Route::resource('dashboard','DashboardController');
+Route::get('/', function () {
+    return view('v_admin');
 });
+
+Route::view('/nelayan', 'v_nelayan');
+Route::view('/mitra', 'v_mitra');
 
 Route::group(['namespace'=>'frontend'], function(){
     Route::resource('home', 'HomeController');
