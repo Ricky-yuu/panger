@@ -18,8 +18,8 @@ use Illuminate\Support\Facades\Route;
 // });
 
 
-Route::group(['namspace'=>'backend'], function(){
-    Route::resource('dashboard','backend\DashboardController');
+Route::group(['namespace'=>'backend'], function(){
+    Route::resource('dashboard','DashboardController');
 });
 
 Route::group(['namespace'=>'frontend'], function(){
