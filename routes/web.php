@@ -24,6 +24,7 @@ Route::get('/', function () {
 
 Route::view('/nelayan', 'v_nelayan');
 Route::view('/mitra', 'v_mitra');
+Route::view('/konsumen', 'v_konsumen');
 
 Route::group(['namespace'=>'frontend'], function(){
     Route::resource('home', 'HomeController');
